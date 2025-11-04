@@ -25,12 +25,44 @@ const portfolioItems = [
     icon: "🏢",
     image: "/portfolio/hyukbon.png",
   },
+  {
+    title: "Sinhosup",
+    url: "https://sinhosup.com",
+    domain: "sinhosup.com",
+    description: "전기 시스템 진단 웹사이트 개발",
+    icon: "⚡",
+    image: "/portfolio/sinhosup.png",
+  },
 ];
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "이케이랩",
+    alternateName: "EKLab",
+    legalName: "이케이랩",
+    description: "당신의 아이디어를 현실로 만드는 웹 개발 파트너입니다",
+    email: "ekankr2@gmail.com",
+    url: "https://eklab.kr",
+    sameAs: ["https://ekankr2.github.io/"],
+    areaServed: "KR",
+    serviceType: "웹 개발 프리랜스 서비스",
+    founder: {
+      "@type": "Person",
+      name: "임익환",
+    },
+    taxID: "520-28-02146",
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-black dark:via-zinc-950 dark:to-black">
-      <main className="container mx-auto px-4 py-16 md:py-24">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="min-h-screen bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-black dark:via-zinc-950 dark:to-black">
+        <main className="container mx-auto px-4 py-16 md:py-24">
         {/* Hero Section */}
         <section className="mb-24 text-center">
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-black dark:text-white md:text-7xl">
@@ -112,7 +144,7 @@ export default function Home() {
           <p className="mb-8 text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
             프로젝트에 대해 논의하고 싶으시거나 견적이 필요하시다면
             <br />
-            언제든지 연락 주세요.
+            언제든지 연락 주세요. 세금 계산서 발행도 가능합니다.
           </p>
           <a
             href="mailto:ekankr2@gmail.com"
@@ -133,7 +165,7 @@ export default function Home() {
             </svg>
             ekankr2@gmail.com
           </a>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col items-center gap-3">
             <a
               href="https://ekankr2.github.io/"
               target="_blank"
@@ -159,10 +191,15 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-24 text-center text-sm text-zinc-500 dark:text-zinc-500">
-          <p>© {new Date().getFullYear()} 이케이랩 (EKLab). All rights reserved.</p>
+        <footer className="mt-24 text-center text-sm text-zinc-500 dark:text-zinc-500 space-y-2">
+          <div>
+            <p>이케이랩 | 사업자등록번호: 520-28-02146 | 임익환</p>
+            <p>경기광주세무서장 | 이메일: ekankr2@gmail.com</p>
+          </div>
+          <p className="pt-4">© {new Date().getFullYear()} 이케이랩. All rights reserved.</p>
         </footer>
       </main>
     </div>
+    </>
   );
 }

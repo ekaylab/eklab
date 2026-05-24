@@ -84,112 +84,9 @@ const services = [
   },
 ];
 
-const promises = [
-  {
-    title: "평일 1시간 내 답변",
-    description: "오전 10시부터 오후 7시 사이 문의는 1시간 안에 답변 드립니다.",
-    icon: (
-      <svg
-        className="h-6 w-6"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "한 사람이 끝까지 책임",
-    description: "여러 명에게 떠넘기지 않고 처음부터 끝까지 직접 진행합니다.",
-    icon: (
-      <svg
-        className="h-6 w-6"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "오픈 후 1년 무료 A/S",
-    description: "오픈 후 1년간 잔버그·수정 요청을 무료로 처리해 드립니다.",
-    icon: (
-      <svg
-        className="h-6 w-6"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 12l2 2 4-4m5.6-2.6A9 9 0 1112 21a9 9 0 018.6-11.6z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "세금계산서 발행",
-    description: "정식 사업자등록 완료. 세금계산서·현금영수증 모두 가능합니다.",
-    icon: (
-      <svg
-        className="h-6 w-6"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-        />
-      </svg>
-    ),
-  },
-];
-
-const processSteps = [
-  {
-    step: "01",
-    title: "전화·이메일 상담",
-    description: "어떤 사이트가 필요하신지 편하게 말씀해 주세요. 상담은 무료입니다.",
-  },
-  {
-    step: "02",
-    title: "견적서 작성",
-    description: "필요한 기능, 제작 기간, 비용을 정리해서 견적서로 알려 드립니다.",
-  },
-  {
-    step: "03",
-    title: "제작 진행",
-    description:
-      "일주일에 한 번 진행 상황을 보여 드리고, 의견을 반영하며 만들어 드립니다.",
-  },
-  {
-    step: "04",
-    title: "오픈 및 사후 관리",
-    description: "완성된 사이트를 오픈해 드리고, 이후 문제가 생기면 바로 도와 드립니다.",
-  },
-];
-
 const portfolioItems = [
   {
-    title: "Erayba Korea",
+    title: "이레비아 코리아",
     url: "https://eraybakorea.com",
     domain: "eraybakorea.com",
     description:
@@ -197,14 +94,14 @@ const portfolioItems = [
     image: "/portfolio/eraybakorea.png",
   },
   {
-    title: "Smartel",
+    title: "스마텔",
     url: "https://smartel.kr",
     domain: "smartel.kr",
     description: "알뜰폰 통신사 공식 웹사이트 개발",
     image: "/portfolio/smartel.png",
   },
   {
-    title: "MEDICAL IP",
+    title: "메디컬아이피",
     url: "https://medicalip.com",
     domain: "medicalip.com",
     description: "의료 AI 기술 회사의 공식 웹사이트 개발",
@@ -218,7 +115,7 @@ const portfolioItems = [
     image: "/portfolio/hyukbon.png",
   },
   {
-    title: "Sinhosup",
+    title: "신호숲",
     url: "https://sinhosup.com",
     domain: "sinhosup.com",
     description: "전기 시스템 진단 웹사이트 개발",
@@ -282,21 +179,20 @@ export default function Home() {
         <main className="container mx-auto px-4 py-16 md:py-24">
           {/* Hero Section */}
           <section className="mb-28 text-center">
-            <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700 dark:border-blue-800 dark:bg-blue-950/50 dark:text-blue-300">
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              지금 새 프로젝트 문의 받습니다
-            </span>
             <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 dark:text-white md:text-7xl">
-              사장님 사업을,
+              홈페이지가
               <br />
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                인터넷에 멋지게
+                필요하신가요?
               </span>
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-              회사·가게 홈페이지부터 온라인 주문·예약 시스템까지,
+              회사 홈페이지, 온라인 쇼핑몰, 예약·주문 시스템까지
               <br className="hidden md:block" />
-              처음부터 끝까지 한 사람이 책임지고 만들어 드립니다.
+              한 사람이 끝까지 책임지고 만들고, 오픈 후 1년간 무료로 관리합니다.
+            </p>
+            <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
+              세금계산서 발행 가능
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -317,53 +213,22 @@ export default function Home() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                지금 전화 상담
+                010-7276-7477
               </a>
               <a
                 href="#contact"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 text-lg font-semibold text-slate-800 transition-all hover:scale-105 hover:border-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-600 sm:w-auto"
               >
-                견적 문의하기
+                이메일로 문의
               </a>
-            </div>
-          </section>
-
-          {/* Promises Section */}
-          <section className="mb-28">
-            <h2 className="mb-4 text-center text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
-              이케이랩의 약속
-            </h2>
-            <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600 dark:text-slate-400 md:text-lg">
-              사장님께 약속드리는 4가지입니다.
-            </p>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {promises.map((p) => (
-                <div
-                  key={p.title}
-                  className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:border-emerald-400 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:border-emerald-500"
-                >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600 transition-colors group-hover:bg-emerald-500 group-hover:text-white dark:bg-emerald-950 dark:text-emerald-400">
-                    {p.icon}
-                  </div>
-                  <h3 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">
-                    {p.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                    {p.description}
-                  </p>
-                </div>
-              ))}
             </div>
           </section>
 
           {/* Services Section */}
           <section className="mb-28">
-            <h2 className="mb-4 text-center text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
-              이런 일을 해 드립니다
+            <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
+              이런 일을 합니다
             </h2>
-            <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600 dark:text-slate-400 md:text-lg">
-              어려운 기술 용어 없이, 사장님께 필요한 결과물만 알려 드립니다.
-            </p>
             <div className="grid gap-6 md:grid-cols-2">
               {services.map((service) => (
                 <div
@@ -390,7 +255,7 @@ export default function Home() {
               지금까지 만든 사이트
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600 dark:text-slate-400 md:text-lg">
-              실제 운영 중인 사이트입니다. 클릭하시면 바로 확인하실 수 있어요.
+              실제 운영 중인 사이트입니다.
             </p>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {portfolioItems.map((item) => (
@@ -443,51 +308,6 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Process Section */}
-          <section className="mb-28">
-            <h2 className="mb-4 text-center text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
-              진행 순서
-            </h2>
-            <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600 dark:text-slate-400 md:text-lg">
-              상담부터 오픈까지, 모든 과정을 친절하게 안내해 드립니다.
-            </p>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              {processSteps.map((step, idx) => (
-                <div
-                  key={step.step}
-                  className="relative rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900"
-                >
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 text-sm font-bold text-white shadow-md">
-                    {step.step}
-                  </div>
-                  <h3 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                    {step.description}
-                  </p>
-                  {idx < processSteps.length - 1 && (
-                    <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 text-slate-300 lg:block dark:text-slate-700">
-                      <svg
-                        className="h-6 w-6"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
-
           {/* Contact Section */}
           <section
             id="contact"
@@ -499,15 +319,15 @@ export default function Home() {
             </div>
 
             <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-              지금 바로 문의하세요
+              연락처
             </h2>
             <p className="mb-2 text-lg leading-relaxed text-blue-50">
-              상담은 무료입니다. 부담 없이 연락 주세요.
+              전화나 이메일, 편한 쪽으로 연락 주세요.
             </p>
             <p className="mb-8 text-sm leading-relaxed text-blue-100">
-              프로젝트 규모와 기능에 따라 비용이 달라집니다.
+              프로젝트마다 규모와 기능이 달라 비용이 달라집니다.
               <br />
-              예산 범위를 알려 주시면 맞춤 견적을 드립니다.
+              예산을 알려 주시면 거기에 맞춰 견적을 드립니다.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -547,11 +367,11 @@ export default function Home() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                이메일 보내기
+                ekankr2@gmail.com
               </a>
             </div>
             <p className="mt-8 text-sm text-blue-100">
-              상담 가능 시간: 평일 오전 10시 - 오후 7시
+              평일 오전 10시 - 오후 7시
             </p>
           </section>
 

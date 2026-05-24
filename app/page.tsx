@@ -189,7 +189,7 @@ export default function Home() {
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
               회사 홈페이지, 온라인 쇼핑몰, 예약·주문 시스템까지
               <br className="hidden md:block" />
-              한 사람이 끝까지 책임지고 만들고, 오픈 후 1년간 무료로 관리합니다.
+              끝까지 책임지고 만들고, 오픈 후 관리까지 도와드립니다.
             </p>
             <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
               세금계산서 발행 가능

@@ -2,85 +2,34 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "보기 좋은 홈페이지 제작",
+    title: "홈페이지·소개 사이트",
     description:
-      "휴대폰·PC·태블릿 어디서 봐도 잘 보이는 회사 홈페이지를 만들어 드립니다.",
-    icon: (
-      <svg
-        className="h-7 w-7"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.8}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 7a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
-        />
-        <path strokeLinecap="round" d="M8 21h8M12 17v4" />
-      </svg>
-    ),
+      "회사 소개, 브랜드 페이지, 개인 포트폴리오 — 보여주고 싶은 걸 깔끔하고 보기 좋게 담아 드려요.",
   },
   {
-    title: "주문·예약·회원관리 시스템",
+    title: "주문·결제·예약 시스템",
     description:
-      "온라인 주문, 예약 접수, 회원 가입·관리 등 사업에 필요한 기능을 직접 개발해 드립니다.",
-    icon: (
-      <svg
-        className="h-7 w-7"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.8}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-        />
-      </svg>
-    ),
+      "주문·결제·예약·회원 관리를 방문자가 사이트에서 직접. 확인 메일까지 자동으로 나가게 해 드려요.",
   },
   {
-    title: "서버 설치 및 운영 관리",
+    title: "봇·업무 자동화",
     description:
-      "사이트가 안 끊기고 빠르게 돌아가도록 서버를 설치하고, 도메인·보안 인증서까지 챙겨 드립니다.",
-    icon: (
-      <svg
-        className="h-7 w-7"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.8}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-        />
-      </svg>
-    ),
+      "반복하던 작업을 대신 돌리는 프로그램, 채팅 봇, 데이터 자동 수집 — 손 많이 가던 일을 컴퓨터가 대신 처리하게 만들어요.",
   },
   {
-    title: "네이버·구글 검색 노출",
+    title: "서버 설치·운영",
     description:
-      "회사 이름을 검색하면 잘 나오게, 손님이 더 찾아오게 검색 최적화를 도와 드립니다.",
-    icon: (
-      <svg
-        className="h-7 w-7"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.8}
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M21 21l-5.2-5.2M17 10a7 7 0 11-14 0 7 7 0 0114 0z"
-        />
-      </svg>
-    ),
+      "사이트가 24시간 안 끊기고 빠르게 열리도록, 어려운 뒷단 관리는 제가 다 맡아요. 본업에만 신경 쓰세요.",
+  },
+  {
+    title: "검색 노출·방문자 분석",
+    description:
+      "네이버·구글에 잘 나오게(SEO) 사람을 모으고, 누가 얼마나 들어오는지·어디서 빠져나가는지 분석해서 매출 늘릴 방법까지 같이 찾아 드려요.",
+  },
+  {
+    title: "그 외 필요한 거 뭐든",
+    description:
+      "위에 없는 것도 괜찮아요. 만들고 싶은 게 있으면 일단 말씀해 주세요. 되는지 안 되는지부터 솔직하게 알려 드려요.",
   },
 ];
 
@@ -90,35 +39,35 @@ const portfolioItems = [
     url: "https://eraybakorea.com",
     domain: "eraybakorea.com",
     description:
-      "헤어 케어 브랜드 쇼핑몰 - 온라인 결제, 주문 이메일 발송, 서버 배포까지 직접 구축",
+      "헤어 케어 브랜드 쇼핑몰. 온라인 결제부터 주문 메일 발송, 서버 배포까지 혼자 다 했어요.",
     image: "/portfolio/eraybakorea.png",
   },
   {
     title: "스마텔",
     url: "https://smartel.kr",
     domain: "smartel.kr",
-    description: "알뜰폰 통신사 공식 웹사이트 개발",
+    description: "알뜰폰 통신사 공식 웹사이트.",
     image: "/portfolio/smartel.png",
   },
   {
     title: "메디컬아이피",
     url: "https://medicalip.com",
     domain: "medicalip.com",
-    description: "의료 AI 기술 회사의 공식 웹사이트 개발",
+    description: "의료 AI 기술 회사 공식 웹사이트.",
     image: "/portfolio/medicalip.png",
   },
   {
     title: "혁본",
     url: "https://hyukbon.com",
     domain: "hyukbon.com",
-    description: "부동산 분양 대행 회사의 웹사이트 개발",
+    description: "부동산 분양 대행 회사 웹사이트.",
     image: "/portfolio/hyukbon.png",
   },
   {
     title: "신호숲",
     url: "https://sinhosup.com",
     domain: "sinhosup.com",
-    description: "전기 시스템 진단 웹사이트 개발",
+    description: "전기 시스템 진단 웹사이트.",
     image: "/portfolio/sinhosup.png",
   },
 ];
@@ -132,7 +81,6 @@ export default function Home() {
     legalName: "이케이랩",
     description: "당신의 아이디어를 현실로 만드는 웹 개발 파트너입니다",
     email: "ekankr2@gmail.com",
-    telephone: "+82-10-7276-7477",
     url: "https://eklab.kr",
     sameAs: ["https://ekankr2.github.io/"],
     areaServed: "KR",
@@ -144,9 +92,17 @@ export default function Home() {
     taxID: "520-28-02146",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "10:00",
-      closes: "19:00",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -168,138 +124,129 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="relative min-h-screen overflow-hidden bg-slate-50 dark:bg-slate-950">
-        {/* Decorative background blobs */}
-        <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-blue-200/40 blur-3xl dark:bg-blue-900/30" />
-          <div className="absolute top-1/3 -left-40 h-96 w-96 rounded-full bg-indigo-200/40 blur-3xl dark:bg-indigo-900/30" />
-          <div className="absolute bottom-0 right-1/4 h-80 w-80 rounded-full bg-emerald-200/30 blur-3xl dark:bg-emerald-900/20" />
-        </div>
 
-        <main className="container mx-auto px-4 py-16 md:py-24">
-          {/* Hero Section */}
-          <section className="mb-28 text-center">
-            <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 dark:text-white md:text-7xl">
-              홈페이지가
+      <div className="relative min-h-screen">
+        {/* Top bar */}
+        <header className="mx-auto flex max-w-5xl items-center justify-between px-5 pt-8">
+          <span className="font-display text-2xl font-bold tracking-tight">
+            이케이랩<span className="text-tomato">.</span>
+          </span>
+          <span className="font-hand -rotate-3 text-lg text-ink-soft">
+            1인 개발 공방
+          </span>
+        </header>
+
+        <main className="mx-auto max-w-5xl px-5">
+          {/* Hero */}
+          <section className="relative pt-16 pb-24 md:pt-24 md:pb-32">
+            <p className="rise font-hand mb-6 inline-block -rotate-2 rounded-full border-2 border-ink bg-gold px-4 py-1 text-lg">
+              안녕하세요, 임익환입니다 👋
+            </p>
+            <h1 className="rise font-display text-5xl leading-[1.1] font-bold tracking-tight md:text-7xl">
+              필요한 거,
               <br />
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                필요하신가요?
-              </span>
+              <span className="text-tomato">제대로</span> 만들어
+              <br />
+              드릴게요.
             </h1>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-              회사 홈페이지, 온라인 쇼핑몰, 예약·주문 시스템까지
-              <br className="hidden md:block" />
-              끝까지 책임지고 만들고, 오픈 후 관리까지 도와드립니다.
-            </p>
-            <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
-              세금계산서 발행 가능
+            <p className="rise mt-8 max-w-xl text-lg leading-relaxed text-ink-soft md:text-xl">
+              회사 소개 사이트, 온라인 쇼핑몰, 예약·주문 시스템, 업무 자동화까지
+              — 웹으로 만들 수 있는 건 웬만하면 다 만들어요. 만들고 나서도 옆에서
+              챙겨 드려요.
             </p>
 
-            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="tel:+821072767477"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-blue-500/40 sm:w-auto"
-              >
-                <svg
-                  className="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                010-7276-7477
-              </a>
+            <div className="rise mt-10 flex flex-wrap items-center gap-4">
               <a
                 href="#contact"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 text-lg font-semibold text-slate-800 transition-all hover:scale-105 hover:border-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-600 sm:w-auto"
+                className="inline-flex items-center gap-2 border-2 border-ink bg-tomato px-7 py-3.5 text-lg font-bold text-paper shadow-[6px_6px_0_0_var(--ink)] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[9px_9px_0_0_var(--ink)] active:translate-x-0 active:translate-y-0 active:shadow-[3px_3px_0_0_var(--ink)]"
               >
-                이메일로 문의
+                문의하기
+                <span aria-hidden>→</span>
               </a>
+              <span className="font-hand text-lg text-ink-soft">
+                세금계산서 발행도 됩니다
+              </span>
             </div>
           </section>
 
-          {/* Services Section */}
-          <section className="mb-28">
-            <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
-              이런 일을 합니다
-            </h2>
+          {/* Services */}
+          <section className="border-t-2 border-ink py-20">
+            <div className="mb-12">
+              <p className="font-mono mb-2 text-sm tracking-[0.25em] text-tomato">
+                No. 01
+              </p>
+              <h2 className="font-display text-3xl font-bold md:text-5xl">
+                이런 걸 만들어요
+              </h2>
+            </div>
             <div className="grid gap-6 md:grid-cols-2">
-              {services.map((service) => (
+              {services.map((service, i) => (
                 <div
                   key={service.title}
-                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:-translate-y-1 hover:border-blue-400 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-500"
+                  className="group flex gap-5 border-2 border-ink bg-paper-2 p-7 shadow-[6px_6px_0_0_var(--ink)] transition-all hover:-translate-y-1 hover:shadow-[6px_10px_0_0_var(--ink)]"
                 >
-                  <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-md shadow-blue-500/30">
-                    {service.icon}
+                  <span className="font-display shrink-0 text-3xl font-bold text-tomato">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3 className="font-display mb-2 text-xl font-bold">
+                      {service.title}
+                    </h3>
+                    <p className="leading-relaxed text-ink-soft">
+                      {service.description}
+                    </p>
                   </div>
-                  <h3 className="mb-3 text-xl font-bold text-slate-900 dark:text-white">
-                    {service.title}
-                  </h3>
-                  <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300">
-                    {service.description}
-                  </p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Portfolio Section */}
-          <section className="mb-28">
-            <h2 className="mb-4 text-center text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
-              지금까지 만든 사이트
-            </h2>
-            <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600 dark:text-slate-400 md:text-lg">
-              실제 운영 중인 사이트입니다.
+          {/* Portfolio */}
+          <section className="border-t-2 border-ink py-20">
+            <div className="mb-4">
+              <p className="font-mono mb-2 text-sm tracking-[0.25em] text-tomato">
+                No. 02
+              </p>
+              <h2 className="font-display text-3xl font-bold md:text-5xl">
+                이런 걸 만들었어요
+              </h2>
+            </div>
+            <p className="font-hand mb-12 text-xl text-ink-soft">
+              전부 지금도 잘 돌아가고 있는 사이트예요.
             </p>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {portfolioItems.map((item) => (
+              {portfolioItems.map((item, i) => (
                 <a
                   key={item.url}
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:border-blue-400 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-500"
+                  className={`group border-2 border-ink bg-paper-2 shadow-[6px_6px_0_0_var(--ink)] transition-all hover:-translate-y-1 hover:shadow-[6px_10px_0_0_var(--ink)] ${
+                    i % 2 === 0 ? "md:rotate-[-0.6deg]" : "md:rotate-[0.6deg]"
+                  } hover:rotate-0`}
                 >
-                  <div className="relative h-52 w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+                  <div className="relative h-48 w-full overflow-hidden border-b-2 border-ink bg-paper">
                     <Image
                       src={item.image}
                       alt={item.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-6">
-                    <div className="mb-3 flex items-start justify-between gap-2">
-                      <div>
-                        <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">
-                          {item.domain}
-                        </p>
-                      </div>
-                      <svg
-                        className="mt-1 h-5 w-5 flex-shrink-0 text-slate-400 transition-all group-hover:translate-x-1 group-hover:text-blue-500"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
+                    <div className="mb-2 flex items-baseline justify-between gap-2">
+                      <h3 className="font-display text-lg font-bold">
+                        {item.title}
+                      </h3>
+                      <span className="font-mono text-xs text-ink-soft">
+                        ↗
+                      </span>
                     </div>
-                    <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                    <p className="mb-3 font-mono text-xs text-ink-soft">
+                      {item.domain}
+                    </p>
+                    <p className="text-sm leading-relaxed text-ink-soft">
                       {item.description}
                     </p>
                   </div>
@@ -308,51 +255,28 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Contact Section */}
-          <section
-            id="contact"
-            className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 p-12 text-center shadow-2xl shadow-blue-500/30"
-          >
-            <div className="absolute inset-0 -z-10 opacity-20">
-              <div className="absolute -top-20 -left-20 h-64 w-64 rounded-full bg-white blur-3xl" />
-              <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white blur-3xl" />
-            </div>
+          {/* Contact */}
+          <section id="contact" className="border-t-2 border-ink py-20">
+            <div className="border-2 border-ink bg-forest p-10 text-paper shadow-[8px_8px_0_0_var(--ink)] md:p-14">
+              <div className="mb-2">
+                <p className="font-mono mb-2 text-sm tracking-[0.25em] text-gold">
+                  No. 03
+                </p>
+                <h2 className="font-display text-3xl font-bold md:text-5xl">
+                  한번 얘기해 볼까요?
+                </h2>
+              </div>
+              <p className="mt-4 max-w-lg text-lg leading-relaxed text-paper/85">
+                만들고 싶은 걸 편하게 적어 보내 주세요. 예산이 정해져 있으면 같이
+                알려 주시면, 거기 맞춰 정직하게 방법을 찾아 드려요.
+              </p>
+              <p className="font-hand mt-3 text-lg text-gold">
+                메일함은 24시간 열려 있어요
+              </p>
 
-            <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-              연락처
-            </h2>
-            <p className="mb-2 text-lg leading-relaxed text-blue-50">
-              전화나 이메일, 편한 쪽으로 연락 주세요.
-            </p>
-            <p className="mb-8 text-sm leading-relaxed text-blue-100">
-              프로젝트마다 규모와 기능이 달라 비용이 달라집니다.
-              <br />
-              예산을 알려 주시면 거기에 맞춰 견적을 드립니다.
-            </p>
-
-            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="tel:+821072767477"
-                className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-bold text-blue-700 shadow-lg transition-all hover:scale-105 hover:shadow-xl sm:w-auto"
-              >
-                <svg
-                  className="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2.2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                010-7276-7477
-              </a>
               <a
                 href="mailto:ekankr2@gmail.com"
-                className="inline-flex w-full items-center justify-center gap-3 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur transition-all hover:scale-105 hover:bg-white/20 sm:w-auto"
+                className="mt-8 inline-flex items-center gap-3 border-2 border-ink bg-gold px-7 py-3.5 text-lg font-bold text-ink shadow-[6px_6px_0_0_var(--ink)] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[9px_9px_0_0_var(--ink)] active:translate-x-0 active:translate-y-0 active:shadow-[3px_3px_0_0_var(--ink)]"
               >
                 <svg
                   className="h-5 w-5"
@@ -370,20 +294,13 @@ export default function Home() {
                 ekankr2@gmail.com
               </a>
             </div>
-            <p className="mt-8 text-sm text-blue-100">
-              평일 오전 10시 - 오후 7시
-            </p>
           </section>
 
           {/* Footer */}
-          <footer className="mt-24 text-center text-sm text-slate-500 dark:text-slate-500 space-y-2">
-            <div className="space-y-1">
-              <p>이케이랩 | 사업자등록번호: 520-28-02146 | 대표 임익환</p>
-              <p>경기광주세무서장 | 이메일: ekankr2@gmail.com | 전화: 010-7276-7477</p>
-            </div>
-            <p className="pt-4">
-              © {new Date().getFullYear()} 이케이랩. All rights reserved.
-            </p>
+          <footer className="border-t-2 border-ink py-10 font-mono text-xs leading-relaxed text-ink-soft">
+            <p>이케이랩 · 대표 임익환 · 사업자등록번호 520-28-02146</p>
+            <p>경기광주세무서장 · ekankr2@gmail.com</p>
+            <p className="mt-3">© {new Date().getFullYear()} 이케이랩</p>
           </footer>
         </main>
       </div>

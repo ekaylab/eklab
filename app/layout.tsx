@@ -1,26 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://eklab.kr"),
+  alternates: {
+    canonical: "/",
+  },
   title: "이케이랩 | EKLab - 웹 개발 프리랜스 서비스",
-  description: "이케이랩(EKLab)에서 전문적인 웹 개발 서비스를 제공합니다. 웹사이트 개발, 웹 애플리케이션 개발, UI/UX 구현 등 다양한 웹 프로젝트를 진행합니다.",
-  keywords: ["웹 개발", "프리랜스", "외주", "웹사이트 개발", "웹 애플리케이션", "Next.js", "React", "이케이랩", "EKLab"],
+  description:
+    "이케이랩(EKLab) — 회사 소개 사이트, 온라인 쇼핑몰, 예약·주문 시스템, 봇·업무 자동화, 검색 노출(SEO)까지. 웹 개발부터 서버 운영까지 직접 만들고 끝까지 챙기는 1인 개발 파트너입니다.",
+  keywords: [
+    "웹 개발",
+    "프리랜스",
+    "외주",
+    "홈페이지 제작",
+    "회사 소개 사이트",
+    "온라인 쇼핑몰",
+    "예약 시스템",
+    "주문 시스템",
+    "업무 자동화",
+    "SEO",
+    "검색 노출",
+    "서버 운영",
+    "Next.js",
+    "React",
+    "이케이랩",
+    "EKLab",
+  ],
   authors: [{ name: "이케이랩", url: "https://eklab.kr" }],
   creator: "이케이랩",
   openGraph: {
     title: "이케이랩 | EKLab - 웹 개발 프리랜스 서비스",
-    description: "당신의 아이디어를 현실로 만드는 웹 개발 파트너입니다",
+    description:
+      "필요한 거, 제대로 만들어 드릴게요. 홈페이지·쇼핑몰·예약·자동화·SEO까지 직접 만드는 웹 개발 파트너입니다.",
+    url: "https://eklab.kr",
     type: "website",
     locale: "ko_KR",
     siteName: "이케이랩",
@@ -28,7 +41,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "이케이랩 | EKLab - 웹 개발 프리랜스 서비스",
-    description: "당신의 아이디어를 현실로 만드는 웹 개발 파트너입니다",
+    description:
+      "필요한 거, 제대로 만들어 드릴게요. 홈페이지·쇼핑몰·예약·자동화·SEO까지 직접 만드는 웹 개발 파트너입니다.",
   },
   robots: {
     index: true,
@@ -47,11 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
